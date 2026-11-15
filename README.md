@@ -5,6 +5,18 @@ My Diwali assignment repo for exploring computer stuff, terminal commands, OS ba
 - USN last 4 digits: 8416
 - Repo: digital-detective-8416
 - Note: Kept private personal info like passwords and IP redacted.
+- Note on commits: Each mission was done, documented, and committed one by one in order with its own dedicated commit.
+
+---
+
+## Topics Explored
+- Computer fundamentals & the IPOS cycle
+- Terminal navigation, file management, flags, and pipes
+- Operating system jobs, background processes, paths, and permissions
+- Running Python code and comparing compilers with interpreters
+- Number conversions (decimal, binary, hex) and text encoding (ASCII/UTF-8)
+- Git version control, branching (`update-about`), and pull requests
+- Computer networks, ping/DNS lookups, and how websites load
 
 ---
 
@@ -23,16 +35,17 @@ My Diwali assignment repo for exploring computer stuff, terminal commands, OS ba
 ---
 
 ## How to run the converter
-Go to `mission-05-numbers-data` and run:
+Head into `mission-05-numbers-data` and run:
 ```bash
 python3 number_converter.py
 ```
-Just type in a number and it prints binary and hex.
+Type any positive integer and it prints the binary and hex values.
 
 ---
 
 ## My Learning
 Here are a few key things I picked up while working through these missions:
-- Terminal is actually much faster than clicking through folders once you know `cd`, `ls`, and `mkdir`.
+- Terminal is actually much faster than clicking around folders once you know `cd`, `ls`, and `mkdir`.
 - How programs get executed: compilers translate the whole file beforehand to run fast, while interpreters like Python run things line-by-line.
 - How Git keeps track of changes with snapshots so you can always see older commits or test stuff safely in branches without breaking `main`.
+- How networks talk: DNS is basically just the phonebook that turns web names into IP addresses before packets get sent.
