@@ -1,0 +1,2 @@
+First line: Terminal practice is going okay.
+Second line: Appending text without overwriting line one.
