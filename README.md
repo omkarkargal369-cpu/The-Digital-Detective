@@ -31,5 +31,8 @@ Just type in a number and it prints binary and hex.
 
 ---
 
-## What I learned
-Learned how terminal commands work, how the OS runs processes in the background, converting binary/hex, and how git branches and pull requests work without breaking main code.
+## My Learning
+Here are a few key things I picked up while working through these missions:
+- Terminal is actually much faster than clicking through folders once you know `cd`, `ls`, and `mkdir`.
+- How programs get executed: compilers translate the whole file beforehand to run fast, while interpreters like Python run things line-by-line.
+- How Git keeps track of changes with snapshots so you can always see older commits or test stuff safely in branches without breaking `main`.
