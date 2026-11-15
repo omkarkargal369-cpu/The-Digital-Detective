@@ -1,43 +1,44 @@
 # Mission 4 — How programs run
 
 ## 1. Task / objective
-Write and run a simple one-line Python script (`hello.py`) and compare how a compiler works versus an interpreter.
+Create a simple python file `hello.py` and compare a compiler with an interpreter.
 
 ## 2. Work completed
-- Made `hello.py` with `print("Hello from Python")`.
-- Ran it using `python3` in terminal and verified the output.
-- Compared compilers and interpreters using bullet points instead of tables.
+- Made `hello.py` with one print line.
+- Ran it with `python3` in terminal.
+- Wrote down the comparison between compiler and interpreter.
 
 ## 3. Commands / tools used
-- `python3 mission-04-programs/hello.py` - ran the script using Python 3 interpreter.
-- Text editor to create the python file and this README.
+- `python3 hello.py` - ran the python script.
 
 ## 4. My understanding
 
-### Task 4.1 — Python Program Execution
-Ran `python3 mission-04-programs/hello.py` and the terminal printed:
+### Task 4.1 — Python Program
+Created `hello.py`:
+```python
+print("Hello from Python")
+```
+Ran `python3 mission-04-programs/hello.py` and it printed:
 `Hello from Python`
-Python loaded the script, parsed the print statement, and executed it right on the spot.
 
-### Task 4.2 — Compiler vs Interpreter Comparison
+### Task 4.2 — Compiler vs Interpreter
 
-**Compiler:**
-- When translation / execution happens: Translates the whole source code file all at once into machine code before you can run it.
-- Typical output: An executable binary file (like an `.exe` on Windows or a standalone binary on Mac/Linux).
-- One example: C, C++, or Rust (using `gcc`, `clang`, or `rustc`).
-- One advantage: Runs way faster once compiled because the machine code runs directly on the CPU without translation overhead.
+Compiler:
+- When it translates: Translates the whole program before running it.
+- Typical output: An executable file (like an `.exe` or binary).
+- Example: C or C++.
+- Advantage: Runs very fast once compiled.
 
-**Interpreter:**
-- When translation / execution happens: Reads and executes code line-by-line at runtime as the program runs.
-- Typical output: Runs directly in memory, no separate standalone executable file created.
-- One example: Python or JavaScript (Node.js).
-- One advantage: Much easier and faster for testing and debugging because you don't have to wait for a build step every time you change a line of code.
+Interpreter:
+- When it translates: Translates code line-by-line while running.
+- Typical output: Runs directly, no separate binary file.
+- Example: Python.
+- Advantage: Easy to test and write code quickly without compiling every time.
 
-**In my own words:**
-A compiler is like taking an entire book in English and translating the whole thing into Hindi before anyone reads it, so reading it later is super fast. An interpreter is like a live translator standing next to you translating sentence by sentence as you speak, which is a bit slower but makes it super easy to change your words on the fly without waiting.
+In simple words: A compiler translates everything at once into machine code before you run it, while an interpreter translates and runs it line-by-line at runtime.
 
 ## 5. Difficulties faced
-No issues here, the one-liner python script worked on the first try.
+No difficulties.
 
 ## 6. How I resolved them
 Not applicable.
@@ -45,8 +46,7 @@ Not applicable.
 ## 7. Evidence / files
 - `mission-04-programs/hello.py`
 - `mission-04-programs/README.md`
-- Terminal output: `Hello from Python`
 
 ## 8. Commit details
 - Commit message: "Compare compilers and interpreters"
-- Ready to push to GitHub.
+- Pushed to main.
