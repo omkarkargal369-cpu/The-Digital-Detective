@@ -1,48 +1,47 @@
 # Mission 1 — Know your computer
 
 ## 1. Task / objective
-Explain how computers handle input, processing, output, and storage (IPOS), list some hardware and software I use, and give 3 examples of computers we see everyday.
+Explain the IPOS model, list 4 hardware and 4 software items, and give 3 examples of everyday computers.
 
 ## 2. Work completed
-- Picked typing and saving a doc as my IPOS example.
-- Listed 4 hardware parts and 4 software programs with their types.
-- Wrote down 3 normal systems like ATMs and smart TVs.
-- Kept it in simple bullet points, no tables.
+- Wrote notes on typing a document for the IPOS example.
+- Listed 4 hardware parts and 4 software programs.
+- Listed 3 everyday computer systems.
 
 ## 3. Commands / tools used
-- Text editor to write down notes.
-- Git to commit and push.
+- Text editor for writing notes.
+- Git for saving and pushing.
 
 ## 4. My understanding
 
-### Task 1.1 — IPOS Example: Typing and saving notes
-- Input: Typing on my keyboard and clicking with trackpad. (Hardware: Keyboard, trackpad)
-- Processing: CPU takes the key clicks, turns them into letters, and holds them in RAM so they show up right away. (Hardware: CPU, RAM)
-- Output: The text shows up on the screen so I can see what I wrote. (Hardware: Laptop screen)
-- Storage: When I hit save, it saves the file from RAM into the SSD so it stays there after turning off. (Hardware: SSD)
+### Task 1.1 — IPOS: Typing and saving a file
+- Input: Typing on the keyboard. (Hardware: Keyboard)
+- Processing: CPU handles the key presses and puts text in RAM. (Hardware: CPU, RAM)
+- Output: Text shows on the screen. (Hardware: Monitor)
+- Storage: File is saved to the disk when I hit save. (Hardware: SSD)
 
-How it flows: Keys pressed -> CPU processes into memory -> screen displays it -> saved to SSD.
+Flow: Keyboard -> CPU/RAM -> Screen -> SSD.
 
 ### Task 1.2 — Hardware and Software
 Hardware:
-- Keyboard: Used for typing letters and shortcuts.
-- Mouse / Trackpad: Used to move pointer and click things.
-- Screen / Monitor: Displays the desktop and windows.
-- SSD: Internal drive where files and OS are stored permanently.
+- Keyboard: Used to type text.
+- Mouse: Used to click and point.
+- Monitor: Displays things on screen.
+- SSD: Stores files permanently.
 
 Software:
-- macOS: Operating System. Controls the hardware and lets other apps run.
-- Chrome: Application software. Used for browsing websites.
-- VS Code: Application software. Code editor for writing scripts.
-- Activity Monitor: Utility software. Lets you check CPU and RAM usage.
+- macOS: Operating System. Runs the computer and manages hardware.
+- Chrome: Application software. Used to browse the web.
+- VS Code: Application software. Used for writing code.
+- Activity Monitor: Utility software. Shows CPU and memory usage.
 
 ### Task 1.3 — Everyday Computer Systems
-- ATM: Dispenses cash. Input is keypad/card, output is cash and screen/receipt.
-- Smart TV: Streams movies. Input is the remote control, output is the TV screen and sound.
-- Traffic Light: Controls road traffic. Input is timer or road sensors, output is the red/yellow/green lights.
+- ATM: Dispenses cash. Input is card/PIN, output is cash/receipt.
+- Smart TV: Plays streaming videos. Input is remote, output is display/audio.
+- Traffic Light: Controls traffic. Input is timer/sensor, output is the colored lights.
 
 ## 5. Difficulties faced
-No real issues here, IPOS is pretty basic once you think about what you do when typing.
+No difficulties.
 
 ## 6. How I resolved them
 Not applicable.
@@ -52,4 +51,4 @@ Not applicable.
 
 ## 8. Commit details
 - Commit message: "Complete computer basics and IPOS mission"
-- Pushed to GitHub.
+- Pushed to main.

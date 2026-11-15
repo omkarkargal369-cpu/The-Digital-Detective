@@ -1,109 +1,66 @@
 # Mission 2 — Become comfortable with the Terminal
 
 ## 1. Task / objective
-Try out basic terminal commands, do safe file operations inside a practice folder, test out flags and pipes, and check out the package manager.
+Learn basic terminal commands, do file practice in a folder, check flags and pipes, and check the package manager.
 
 ## 2. Work completed
-- Ran commands like `pwd`, `ls`, `cd`, `mkdir`, `touch`, `cp`, `mv`, and `cat`.
-- Made a `terminal-practice` folder and tested `>` vs `>>` so I don't accidentally overwrite files.
-- Tried out `ls -lah` and piped it into `head -n 5`.
-- Checked Homebrew version and installed packages.
-- Wrote down all observations below with zero tables.
+- Ran commands: `pwd`, `ls`, `cd`, `mkdir`, `touch`, `cp`, `mv`, and `cat`.
+- Created `terminal-practice` folder, tested `>` vs `>>`, and made a backup file.
+- Tested `ls -lah` and piped it into `head -n 5`.
+- Checked Homebrew.
 
 ## 3. Commands / tools used
-- `pwd` - print current folder path
-- `ls` and `ls -l` - list files normally and in detailed view
-- `cd` - change directory
-- `mkdir` - make new directory
-- `touch` - make empty file
-- `cp` - copy file
-- `mv` - move or rename file
-- `cat` - print file content on screen
-- `head` - view just the top few lines
-- `|` (pipe) - send output of one command into another
-- `brew` - package manager for mac
+- `pwd`: Print current working directory.
+- `ls`: List files.
+- `cd`: Change directory.
+- `mkdir`: Make folder.
+- `touch`: Make an empty file.
+- `cp`: Copy a file.
+- `mv`: Rename or move a file.
+- `cat`: Print file contents to terminal.
+- `head`: Show first few lines.
+- `|`: Pipe output from one command to another.
+- `brew`: Homebrew package manager.
 
 ## 4. My understanding
 
-### Task 2.1 — Basic Terminal Operations
-- `pwd` (Current-directory display):
-  - What it does: Shows where you are right now in terminal.
-  - What I observed: Printed `/Users/[redacted]/digital-detective-8416`.
-- `ls` (Directory listing):
-  - What it does: Shows all files and folders in the current spot.
-  - What I observed: Showed README.md, evidence, and mission folders.
-- `ls -l` (Detailed listing):
-  - What it does: Shows file permissions, file size, owner, and modified date.
-  - What I observed: Printed long lines starting with `-rw-r--r--`.
-- `cd ..` (Change directory):
-  - What it does: Moves one step up to the parent folder.
-  - What I observed: Moved from repo up to my home directory, then typed `cd digital-detective-8416` to get back.
-- `mkdir terminal-practice` (Create directory):
-  - What it does: Makes a new folder.
-  - What I observed: Created the new `terminal-practice` folder without any fuss.
-- `touch practice.txt` (Create empty file):
-  - What it does: Creates an empty text file or updates timestamps.
-  - What I observed: Made a 0-byte file named `practice.txt`.
-- `cp practice.txt practice_backup.txt` (Copy file):
-  - What it does: Makes an exact duplicate copy of a file.
-  - What I observed: Now had two separate files with the same content.
-- `mv practice_backup.txt practice_backup_renamed.txt` (Move / rename file):
-  - What it does: Renames the file or moves it to a new location.
-  - What I observed: The old name disappeared and the new name showed up.
-- `cat practice.txt` (Display file contents):
-  - What it does: Dumps the contents of the file right onto the terminal screen.
-  - What I observed: Displayed the lines of text I typed into it.
+### Task 2.1 — Terminal Operations
+- `pwd`: Prints where you are right now. Observed: `/Users/[redacted]/digital-detective-8416`.
+- `ls`: Lists files. Observed: Showed all folders and files in current folder.
+- `ls -l`: Lists details. Observed: Showed permissions, size, and dates.
+- `cd ..`: Goes up one folder. Observed: Moved to parent directory.
+- `mkdir`: Makes folder. Observed: Made `terminal-practice`.
+- `touch`: Makes empty file. Observed: Made `practice.txt`.
+- `cp`: Copies file. Observed: Made a copy named `practice_backup.txt`.
+- `mv`: Renames file. Observed: Renamed backup to `practice_backup_renamed.txt`.
+- `cat`: Shows file content. Observed: Printed the lines inside `practice.txt`.
 
----
+### Task 2.2 — File Practice Questions
+- `>` vs `>>`:
+  - `>` replaces the whole file with new text.
+  - `>>` appends new text at the end without deleting anything.
+- Copy vs move:
+  - Copy makes a duplicate so you have two files.
+  - Move just moves or renames it, so you still have one file.
+- What does `pwd` show:
+  - The full path to your current location.
+- Why is `ls` useful:
+  - So you can see what files exist in the folder.
 
-### Task 2.2 — Practising file changes safely
-Ran these in `terminal-practice`:
-```bash
-echo "First line: Terminal practice is going okay." > practice.txt
-echo "Second line: Appending text without overwriting line one." >> practice.txt
-cat practice.txt
-```
-Both lines showed up fine.
+### Task 2.3 — Flags and Pipes
+- `ls -lah`: `-l` gives a detailed list, `-a` includes hidden files, and `-h` makes file sizes easy to read (like KB/MB).
+- `ls -la | head -n 5`: The pipe `|` sends the output of `ls` to `head`, so only the first 5 lines get printed.
 
-Answers to questions:
-- Difference between replacing (`>`) and appending (`>>`):
-  - `>` wipes out whatever was in the file and replaces it with the new text.
-  - `>>` keeps whatever was already there and just tacks the new line onto the very end.
-- Difference between copying (`cp`) and moving (`mv`):
-  - Copy leaves the original file where it was and makes a second copy.
-  - Move just moves the file to a new spot or renames it, so you still only have one file.
-- What info does current-directory display (`pwd`) give?
-  - It gives you the full absolute path from the root `/` down to where your terminal is currently sitting.
-- Why is directory listing (`ls`) useful?
-  - Because in terminal you don't have a visual mouse folder window open, so `ls` is the only way to see what files exist and avoid typos.
-
----
-
-### Task 2.3 — Flags and pipes
-- Normal `ls` just gives file names in a couple columns.
-- `ls -lah`:
-  - `-l` makes it a detailed vertical list with permissions and dates.
-  - `-a` shows all files including hidden files starting with a dot (like `.git`).
-  - `-h` turns ugly byte sizes into readable units like KB and MB.
-- Pipe test: `ls -la | head -n 5`
-  - The pipe `|` takes the output from `ls -la` and instead of printing hundreds of lines to screen, feeds it straight into `head -n 5`.
-  - `ls -la` on the left generates the full list, and `head -n 5` on the right cuts it down to just the first 5 lines.
-
----
-
-### Task 2.4 — Package managers
-Checked brew:
-- Version: `Homebrew 7.0.7`
-- Installed formulae: `gettext`, `git`, `json-c`, `libunistring`, `pcre2`.
-
-Why package managers are useful:
-Instead of searching Google, downloading a random `.dmg` or `.pkg` installer, dragging icons to Applications, and manually updating everything, Homebrew lets you install, update, or remove command-line tools with one quick terminal command. It also handles all background dependencies automatically so you don't have to figure them out yourself.
+### Task 2.4 — Package Managers
+- Homebrew version: `Homebrew 7.0.7`
+- Packages: `git`, `gettext`, etc.
+- Why useful: It lets you install and update terminal tools with one command instead of downloading installers from the web.
 
 ## 5. Difficulties faced
-Almost used `>` instead of `>>` by muscle memory which would have wiped line 1, but caught it in time.
+Had to remember to use `>>` instead of `>` so I didn't overwrite my text.
 
 ## 6. How I resolved them
-Just double-checked before hitting enter and used `>>` to append properly.
+Used `>>` to append the second line safely.
 
 ## 7. Evidence / files
 - `terminal-practice/practice.txt`
@@ -112,4 +69,4 @@ Just double-checked before hitting enter and used `>>` to append properly.
 
 ## 8. Commit details
 - Commit message: "Complete Terminal and file management mission"
-- Ready to push to GitHub.
+- Pushed to main.
