@@ -1,37 +1,35 @@
 # Mission 0 — Create your GitHub workspace
 
 ## 1. Task / objective
-Set up the project repository named `digital-detective-8416`, check that Python and Git are installed and working, create the required folder structure for all missions, and link it to GitHub.
+Set up the git repo, make all the mission folders, check python and git versions, and push to github.
 
 ## 2. Work completed
-- Decided repository name as `digital-detective-8416` based on the last 4 digits of my USN (8416).
-- Checked versions of Python and Git in terminal.
-- Made the whole directory structure with folders for Mission 0 to 8 plus the evidence folder.
-- Created the initial root README.md with the mission index and links.
+- Named repo `digital-detective-8416` (8416 is last 4 of my USN).
+- Checked python and git on terminal.
+- Created all folders from mission 00 to 08 and an evidence folder.
+- Made the root README.md.
 
 ## 3. Commands / tools used
-- `python3 --version`: To see what version of Python is on my laptop. It showed Python 3.14.7.
-- `git --version`: To check if Git is there. It showed git version 2.56.0.
-- `mkdir -p`: Used to quickly make all the mission directories in one go so I don't have to click around.
-- `git init -b main`: Started the local Git repo with the default branch set to main.
-- `git remote add origin`: Hooked up the local folder to my GitHub repo.
+- `python3 --version` - showed python 3.14.7 is installed.
+- `git --version` - showed git 2.56.0 is installed.
+- `mkdir -p` - made all the mission folders quickly.
+- `git init -b main` - made the local git repo on main branch.
+- `git remote add origin` - linked to my github repo.
 
 ## 4. My understanding
-A repository is basically just a tracked project folder where Git takes snapshots of my files whenever I make a commit. 
-Organizing everything into separate mission folders keeps the whole assignment clean instead of dumping everything in one messy place, and it makes it super easy for the teacher to grade each mission one by one.
+A repo is basically a folder that git tracks so you don't lose your work or mess things up. We split it into mission folders so each task has its own place and isn't all dumped together in one messy folder.
 
 ## 5. Difficulties faced
-No major difficulties. Terminal just needed the right directory path and commands.
+GitHub gave a 404 repo not found error at first when pushing.
 
 ## 6. How I resolved them
-Not applicable.
+Realized the remote repo on GitHub was created with a slightly different name (`The-Digital-Detective`), so updated the remote url and it pushed fine.
 
 ## 7. Evidence / files
-- Root README.md
-- Folder structure created for missions 00 through 08 and evidence folder.
-- Python version verified: Python 3.14.7
-- Git version verified: git version 2.56.0
+- Root `README.md`
+- Mission folders: `mission-00-setup` to `mission-08-final-report`
+- `evidence/` folder
 
 ## 8. Commit details
 - Commit message: "Set up Digital Detective mission structure"
-- Ready to push to GitHub remote.
+- Pushed to main branch.

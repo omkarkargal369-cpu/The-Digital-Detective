@@ -1,76 +1,48 @@
 # Mission 1 — Know your computer
 
 ## 1. Task / objective
-Understand how a computer works using the IPOS (Input, Processing, Output, Storage) model, identify 4 hardware items and 4 software types, and list 3 real-world computer systems around us.
+Explain how computers handle input, processing, output, and storage (IPOS), list some hardware and software I use, and give 3 examples of computers we see everyday.
 
 ## 2. Work completed
-- Picked typing and saving a college essay as the IPOS example and broke down what the computer actually does at every step.
-- Listed 4 hardware items and 4 software examples with their categories and functions.
-- Wrote down 3 everyday embedded systems with their inputs and outputs.
-- No tables were used as requested, everything is formatted with clean bullet points.
+- Picked typing and saving a doc as my IPOS example.
+- Listed 4 hardware parts and 4 software programs with their types.
+- Wrote down 3 normal systems like ATMs and smart TVs.
+- Kept it in simple bullet points, no tables.
 
 ## 3. Commands / tools used
-- Text editor / Terminal to create and edit this documentation file.
-- Git to stage, commit, and push the mission work.
+- Text editor to write down notes.
+- Git to commit and push.
 
 ## 4. My understanding
 
-### Task 1.1 — Tracing an activity with IPOS
-Activity chosen: Typing an assignment in a text editor and saving it to disk.
+### Task 1.1 — IPOS Example: Typing and saving notes
+- Input: Typing on my keyboard and clicking with trackpad. (Hardware: Keyboard, trackpad)
+- Processing: CPU takes the key clicks, turns them into letters, and holds them in RAM so they show up right away. (Hardware: CPU, RAM)
+- Output: The text shows up on the screen so I can see what I wrote. (Hardware: Laptop screen)
+- Storage: When I hit save, it saves the file from RAM into the SSD so it stays there after turning off. (Hardware: SSD)
 
-- **Input:**
-  - What happens: I press keys on my keyboard to write words.
-  - Hardware involved: Laptop keyboard (and trackpad to click around).
-- **Processing:**
-  - What happens: The CPU takes the keystrokes, turns keycodes into characters, and keeps the open document sitting in temporary RAM memory so it shows up instantly.
-  - Hardware involved: CPU (Apple Silicon chip) and RAM.
-- **Output:**
-  - What happens: The text editor renders the letters on screen so I can actually read what I just typed.
-  - Hardware involved: Retina laptop display / screen.
-- **Storage:**
-  - What happens: When I hit Command+S, the document data gets copied from temporary RAM onto the non-volatile drive so it doesn't vanish when I close the laptop.
-  - Hardware involved: Internal SSD.
+How it flows: Keys pressed -> CPU processes into memory -> screen displays it -> saved to SSD.
 
-**How it moves through the stages:** 
-The keyboard sends signals to the CPU, the CPU crunches the characters and tells the screen to draw the letters, and when I hit save, the CPU writes that data block into the SSD.
+### Task 1.2 — Hardware and Software
+Hardware:
+- Keyboard: Used for typing letters and shortcuts.
+- Mouse / Trackpad: Used to move pointer and click things.
+- Screen / Monitor: Displays the desktop and windows.
+- SSD: Internal drive where files and OS are stored permanently.
 
----
-
-### Task 1.2 — Hardware and Software Examples
-
-**Hardware items:**
-- **Keyboard:** Hardware. Used to type letters, numbers, and shortcut commands into the system.
-- **Optical Mouse / Trackpad:** Hardware. Used to move the cursor, click buttons, and select text.
-- **Monitor / Screen:** Hardware. Displays visual graphics, apps, and text so I can see what is happening.
-- **Solid State Drive (SSD):** Hardware. Permanently stores the operating system, apps, and user files even when powered off.
-
-**Software items:**
-- **macOS:** Software (Operating System). Manages computer hardware, controls RAM and CPU time, and lets apps run without fighting each other.
-- **Google Chrome:** Software (Application Software). A web browser used to surf websites, watch videos, and read documentation.
-- **VS Code:** Software (Application Software). A code editor used for writing, editing, and debugging code.
-- **Disk Utility:** Software (Utility Software). A system tool used to check drive health, partition disks, and manage storage drives.
-
----
+Software:
+- macOS: Operating System. Controls the hardware and lets other apps run.
+- Chrome: Application software. Used for browsing websites.
+- VS Code: Application software. Code editor for writing scripts.
+- Activity Monitor: Utility software. Lets you check CPU and RAM usage.
 
 ### Task 1.3 — Everyday Computer Systems
-
-1. **ATM (Automated Teller Machine):**
-   - Main purpose: Allows people to withdraw or deposit cash without needing a human bank teller.
-   - One input: Keypad / PIN pad (or ATM card chip reader).
-   - One output: Cash dispenser (or receipt printer / screen showing balance).
-
-2. **Smart TV:**
-   - Main purpose: Streams movies and shows directly from internet apps like Netflix and YouTube.
-   - One input: Infrared or Bluetooth TV remote buttons (or built-in microphone for voice search).
-   - One output: LED/OLED display panel (and built-in speakers).
-
-3. **Traffic Light Controller:**
-   - Main purpose: Regulates road vehicle flow automatically to avoid crashes at intersections.
-   - One input: Road sensor under the asphalt (or timer / pedestrian crosswalk button).
-   - One output: Red, yellow, and green signal lights.
+- ATM: Dispenses cash. Input is keypad/card, output is cash and screen/receipt.
+- Smart TV: Streams movies. Input is the remote control, output is the TV screen and sound.
+- Traffic Light: Controls road traffic. Input is timer or road sensors, output is the red/yellow/green lights.
 
 ## 5. Difficulties faced
-No major difficulties. IPOS is pretty straightforward once you think about what actually happens when you press a key.
+No real issues here, IPOS is pretty basic once you think about what you do when typing.
 
 ## 6. How I resolved them
 Not applicable.
@@ -80,4 +52,4 @@ Not applicable.
 
 ## 8. Commit details
 - Commit message: "Complete computer basics and IPOS mission"
-- Ready to push to GitHub.
+- Pushed to GitHub.
